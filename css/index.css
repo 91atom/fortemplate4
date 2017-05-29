@@ -1,0 +1,55 @@
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Barrio', cursive;
+    
+}
+
+.my-grid {
+    width: 1200px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 20%;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content:center;
+    text-align: center;
+}
+
+@media (max-width:1199px) {
+    .my-grid {
+        width: 970px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .item {
+        width: 20%;
+    }
+}
+
+@media (max-width: 991px) {
+    .my-grid {
+        width: 750px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .item {
+        width: 40%;
+    }
+}
+
+@media (max-width: 767px) {
+    .my-grid {
+        width: auto;
+    }
+    .item {
+        width: 100%;
+    }
+}
